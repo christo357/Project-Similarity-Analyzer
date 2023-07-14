@@ -1,0 +1,11 @@
+flask 
+Flask-PyMongo 
+Flask-WTF
+gensim
+nltk
+pandas
+scikit-learn
+pymongo==3.11
+python -m gensim.downloader --download glove-wiki-gigaword-300
+
+#python -m pip install "pymongo[srv]"

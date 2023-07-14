@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            result
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{url_for("static",filename="css/pg3.css")}}">
+    </head>
+    <body>
+        <div class="c1">
+            <div class="vnav">
+                <div class="cc1">
+                    <a href="page2.html" title="new search">
+                      <img class="i3" src="img11.svg" style="width: 100%;">
+                   </a>
+                    <a href="page3.html" title="similar projects">
+                      <img class="i4" src="img12.svg" style="width: 100%;">
+                    </a>
+                  </div >
+            </div>
+            <div class="t1">
+                <table>
+                    <tr>
+                        <th class="h1">
+                            Id
+                        </th>
+                        <th class="h2">
+                            Project Title
+                        </th>
+                        <th class="h3">
+                            Similarity Score
+                        </th>
+                    </tr>
+                    {% block content%}
+                        {% for result in result_set %}
+                            <tr>
+                            <td class="h1">
+                                {{result[0]}}
+                            </td>
+                            <td class="h2">
+                                {{result[1]}}
+                            </td>
+                            <td class="h3">
+                                {{result[3]}}
+                            </td>
+                            </tr>
+                        {% endfor %}
+                    {% endblock %}
+
+                        
+                        
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

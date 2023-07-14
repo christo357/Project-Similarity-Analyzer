@@ -1,0 +1,24 @@
+{% extends "page3.html" %}
+
+{% block content%}
+
+  
+
+    {% for result in result_set %}
+      <tr>
+        <td class="h1">
+            {{result[0]}}
+        </td>
+        <td class="h2">
+            {{result[1]}}
+        </td>
+        <td class="h3">
+            {{result[3]}}
+        </td>
+      </tr>
+    {% endfor %}
+
+  
+
+
+{% endblock %}
