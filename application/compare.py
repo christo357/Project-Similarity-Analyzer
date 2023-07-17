@@ -22,8 +22,8 @@ def compareData(abstract):
 
   
 
-  path_data = './cransfield.csv'
-  path_query = 'query.txt'
+  # path_data = './cransfield.csv'
+  # path_query = 'query.txt'
   # path_relevant = './relevance.txt'
   path_word2vec_model = 'word2vec.model'
 
@@ -46,7 +46,9 @@ def compareData(abstract):
       query = re.sub(r'\d+', '', query)  # Remove numbers
       tokens = word_tokenize(query)
       tokens = [lemmatizer.lemmatize(token) for token in tokens if token not in stop_words and token.isalpha()]
+      print(tokens)
       return tokens
+      
 
   import gensim.downloader as api
   from gensim import corpora, models, similarities
@@ -129,3 +131,4 @@ def compareData(abstract):
     result_docs.append((original_doc_id,sim_score))
       
   return result_docs
+  

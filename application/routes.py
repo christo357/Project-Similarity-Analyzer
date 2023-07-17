@@ -5,11 +5,11 @@ from .forms import abstractForm
 from .compare import compareData
 from .details import projectDetails
 
-result_set=[1,2,3,4]
+result_set=[]
 
 @app.route("/")
 def index():
-  return render_template('page1.html')
+  return render_template('index.html')
 
 @app.route("/input_abstract", methods=["POST", "GET"])
 def input_abstract():
@@ -22,8 +22,8 @@ def input_abstract():
     return redirect(url_for('output_results'))
   else:
     form=abstractForm()
-  return render_template('page2.html',form =form)
+  return render_template('search.html',form =form)
 
 @app.route("/results")
 def output_results():
-  return render_template('page3.html',result_set=result_set)
+  return render_template('results.html',result_set=result_set)
