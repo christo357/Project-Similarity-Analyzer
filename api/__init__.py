@@ -9,4 +9,4 @@ app.config["MONGO_URI"] ='mongodb+srv://u2003060:AsEnfAyD8e8mbcTm@cluster0.y21rm
 mongodb_client = PyMongo(app)
 db = mongodb_client.db
 
-from application import routes
+from api import routes

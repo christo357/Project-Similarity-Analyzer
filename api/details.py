@@ -1,4 +1,4 @@
-from application import db
+from api import db
 
 def projectDetails(result_docs):
   docs=[]

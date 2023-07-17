@@ -1,5 +1,5 @@
 from flask import render_template,url_for,request,redirect
-from application import app
+from api import app
 
 from .forms import abstractForm
 from .compare import compareData

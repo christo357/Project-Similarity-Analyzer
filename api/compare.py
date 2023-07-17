@@ -1,4 +1,4 @@
-from application import db
+from api import db
 import os
 import pandas as pd
 import string
