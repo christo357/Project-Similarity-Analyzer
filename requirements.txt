@@ -8,7 +8,7 @@ Flask-SQLAlchemy
 Flask-WTF
 gensim
 greenlet
-gunicorn0
+gunicorn
 itsdangerous
 Jinja2
 joblib
@@ -22,7 +22,7 @@ python-dateutil
 pytz
 regex
 scikit-learn
-scipy1
+scipy
 six
 smart-open
 SQLAlchemy
