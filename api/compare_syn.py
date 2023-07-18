@@ -1,4 +1,4 @@
-from api import db
+from api.index import db
 import os
 import pandas as pd
 import string
@@ -156,7 +156,7 @@ def compareData(abstract):
         result_docs.append((original_doc_id, sim_score))
 
     return result_docs
-from api import db
+from api.index import db
 import os
 import pandas as pd
 import string

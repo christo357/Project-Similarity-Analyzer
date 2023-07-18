@@ -1,4 +1,4 @@
-from api import db
+from api.index import db
 
 def projectDetails(result_docs):
   docs=[]

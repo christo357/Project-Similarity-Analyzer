@@ -15,10 +15,13 @@
             <div class="vnav">
                 <div class = 'cc1'>
                     <a href="{{url_for('input_abstract')}}" title="new search">
-                        <img class="i3" src="{{ url_for('static', filename='img11.svg')}}" style="width: 100%;">
+                        <img class="nav-link" src="{{ url_for('static', filename='img11.svg')}}" style="width: 100%;">
                     </a>
                     <a href="{{url_for('output_results')}}" title="similar projects">
-                        <img class="i4" src="{{ url_for('static', filename='img12.svg')}}" style="width: 100%;">
+                        <img class="nav-link" src="{{ url_for('static', filename='img12.svg')}}" style="width: 100%;">
+                    </a>
+                    <a href="{{url_for('add_abstract')}}" title="similar projects">
+                        <img  class='nav-link' src="{{ url_for('static', filename='search.svg')}}" style="width: 50px;">
                     </a>
                 </div>
             </div>

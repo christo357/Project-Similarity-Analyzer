@@ -1,4 +1,4 @@
-from api import db
+from api.index import db
 import os
 import pandas as pd
 import string
