@@ -5,11 +5,7 @@ import numpy as np
 from nltk.stem import WordNetLemmatizer, PorterStemmer
 from nltk.corpus import stopwords, wordnet
 from nltk.tokenize import word_tokenize
-# from sklearn.feature_extraction.text import TfidfVectorizer
-# from gensim.models import Word2Vec
 from gensim import corpora, models
-
-# import gensim.downloader as api
 import gensim
 from api.index import db
 import time
@@ -22,8 +18,8 @@ nltk.download('punkt')
 
 
 def compareData(abstract):
-    begin = time.time()
-    # path_word2vec_model = 'word2vec.model'
+    # begin = time.time()
+    
 
     
     def preprocess_data(contents):
@@ -46,8 +42,8 @@ def compareData(abstract):
                     lemmatized_synonyms.extend([lemmatizer.lemmatize(lemma.name()) for lemma in lemmas])
             tokens.extend(lemmatized_synonyms)
             preprocessed_data.append(tokens)
-        data_time = time.time()
-        print(f"preprocess time2: {data_time-begin}")
+        # data_time = time.time()
+        # print(f"preprocess time2: {data_time-begin}")
         return preprocessed_data
 
     def preprocess_query(query):
@@ -66,7 +62,7 @@ def compareData(abstract):
             if lemmas:
                 lemmatized_synonyms.extend([lemmatizer.lemmatize(lemma.name()) for lemma in lemmas])
         tokens.extend(lemmatized_synonyms)
-        print("query time",time.time()-begin)
+        # print("query time",time.time()-begin)
         return tokens
 
     def calculate_euclidean_distance(query, documents):
@@ -97,8 +93,7 @@ def compareData(abstract):
 
     # Read data from mongo
     data = read_data()
-    print(data[:10])
-    end_read = time.time()
+    # end_read = time.time()
     # Preprocess data
     preprocessed_data = preprocess_data(data)
 
@@ -110,7 +105,7 @@ def compareData(abstract):
     # Calculate similarity using Euclidean distance
     query_distances = calculate_euclidean_distance(preprocessed_query, preprocessed_data)
 
-    end_eu = time.time()
+    # end_eu = time.time()
     # Rank documents
     ranked_docs = sorted(enumerate(query_distances, start=1), key=lambda x: x[1])
 
@@ -123,9 +118,9 @@ def compareData(abstract):
         print(f"Doc {original_doc_id}: Similarity {similarity*100:.2f}%")
         result_docs.append((original_doc_id,sim_score))
     
-    end = time.time()
-    print(f"read: {end_read-begin}")
-    print(f"eu: {end_eu-begin}")
-    print(f"end: {end-begin}")
+    # end = time.time()
+    # print(f"read: {end_read-begin}")
+    # print(f"eu: {end_eu-begin}")
+    # print(f"end: {end-begin}")
     
     return result_docs
