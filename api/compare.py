@@ -13,6 +13,9 @@ from gensim import corpora, models
 import gensim
 from api.index import db
 import time
+import nltk
+nltk.download('stopwords')
+nltk.download('wordnet')
 
 
 
