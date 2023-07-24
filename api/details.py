@@ -2,6 +2,7 @@ from api.index import db
 
 def projectDetails(result_docs):
   docs=[]
+  print(result_docs)
   for id,score in result_docs:
     print(id,score)
     record = db.Projects.find_one({"id":id})

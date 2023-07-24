@@ -5,7 +5,9 @@ from bson import ObjectId
 
 from .forms import abstractForm
 from .form2 import detailForm
+# from .form_details import ResultForm
 from .compare import compareData
+# from .compare_glove import compareData
 from .details import projectDetails
 
 result_set=[]
@@ -29,8 +31,14 @@ def input_abstract():
     form=abstractForm()
   return render_template('search.html',form =form)
 
-@app.route("/results")
+@app.route("/results",methods=['POST','GET'])
 def output_results():
+  # form = ResultForm()
+  # if request.method == 'POST' and form.validate_on_submit():
+  #     result_id = form.result_value.data
+  #     print(result_id)
+  #     # Process the result_value here as needed
+  #     return redirect(url_for('result_details'),id=result_id)
   return render_template('results.html',result_set=result_set)
 
 @app.route("/add_abstract", methods=['POST','GET'])
@@ -52,9 +60,22 @@ def add_abstract():
     return redirect("/input_abstract")
   else:
     form2 = detailForm()
-    
-   
-    
     form2.abstract.data = input_abstract
   
   return render_template("add_details.html",form = form2)
+
+@app.route('/results/<id>', methods=['GET', 'POST'])
+def result_details(id):
+    print(type(id))
+    
+    result = db.Projects.find_one({'id':int(id)})
+    print('results',result)
+    print('id',int(id))
+    project =  []
+    project.append(result['id'])
+    project.append(result['title'])
+    project.append(result['abstract'])
+    
+    print(project)
+
+    return render_template('project_details.html', project = project)
