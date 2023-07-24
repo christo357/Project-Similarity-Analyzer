@@ -1,8 +1,6 @@
 pip install --upgrade pip
 pip install -r requirements.txt
 
-import nltk
-nltk.download('stopwords')
-
-import nltk
-nltk.download('wordnet')
+RUN python -m import nltk
+RUN python -mnltk.download('stopwords')
+RUN python -m nltk.download('wordnet')
