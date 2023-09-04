@@ -4,16 +4,11 @@ body,html{
   padding: o;;
   background-color: rgb(248,249,250);
 }
-/* .c1{
-  width: 100%;
-  height: 100%;
-} */
+
 .c1{
   width:100%;
   display: inline-block;
-  /* margin-top:70px;
-  margin-left:0px;
-  margin-right:0px; */
+  
 }
 .vnav{
   width:8%;
@@ -28,21 +23,12 @@ body,html{
 .content{
   padding-left: 8%;
 }
-/* .cc1{
-  padding-top:120%;
-  display: inline-block;
-  vertical-align: top;
-  margin:auto;
-  padding-left: 6%;
-  padding-right: 6%;
-  width:80%;
-} */
+
 .cc1{
   width: 70%;
   height: 60%;
   padding-top: 10%;
   display: block;
-  /* vertical-align: top; */
   margin:auto;
   padding-left: 2%;
   padding-right: 2%;
