@@ -20,12 +20,14 @@ The Search Assistant for Document Similarity Comparison is a sophisticated and i
 
 - **Document Clustering**: Organize and categorize documents based on their similarity, facilitating efficient data management and retrieval.
 
-## Getting Started
+## Getting Started:
+### Installation and Usage
 
 1.To install the libraries listed in a requirements file on GitHub, you can use the pip package manager along with the -r flag to specify the path to the requirements file.
 
 **pip install -r requirements.txt**
 
+2.
 
 
 ## Screenshots Of Project-Similarity-Analyzer Tool Website
