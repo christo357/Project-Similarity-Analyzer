@@ -24,6 +24,11 @@ The Search Assistant for Document Similarity Comparison is a sophisticated and i
 
 Please refer to the installation and usage instructions in the project's documentation to get started with this powerful document similarity comparison tool.
 
+To install the libraries listed in a requirements file on GitHub, you can use the pip package manager along with the -r flag to specify the path to the requirements file.
+**pip install -r requirements.txt**
+
+
+
 ## Screenshots Of Project-Similarity-Analyzer Tool Website
 
 ![W1](https://github.com/christo357/Project-Similarity-Analyzer/assets/135303148/64cd05fe-2b39-451f-952b-134e80906091)
