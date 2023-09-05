@@ -27,8 +27,6 @@ The Search Assistant for Document Similarity Comparison is a sophisticated and i
 
 **pip install -r requirements.txt**
 
-2.
-
 
 ## Screenshots Of Project-Similarity-Analyzer Tool Website
 
