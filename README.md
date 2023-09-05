@@ -24,6 +24,15 @@ The Search Assistant for Document Similarity Comparison is a sophisticated and i
 
 Please refer to the installation and usage instructions in the project's documentation to get started with this powerful document similarity comparison tool.
 
+## Screenshots Of Project-Similarity-Analyzer Tool Website
+
+![W1](https://github.com/christo357/Project-Similarity-Analyzer/assets/135303148/64cd05fe-2b39-451f-952b-134e80906091)
+![W2](https://github.com/christo357/Project-Similarity-Analyzer/assets/135303148/7950ca87-d3f0-4da2-9596-f03b415a5424)
+![W3](https://github.com/christo357/Project-Similarity-Analyzer/assets/135303148/e625b524-1c15-4760-a0ce-d6fd945203b1)
+![W4](https://github.com/christo357/Project-Similarity-Analyzer/assets/135303148/21f86b51-d83b-40d7-be95-0ba3bfcfa461)
+![W5](https://github.com/christo357/Project-Similarity-Analyzer/assets/135303148/2d734af9-c5b3-492f-9752-cd74d38902f6)
+![W6](https://github.com/christo357/Project-Similarity-Analyzer/assets/135303148/21d38562-76c0-488a-87b6-98b95d806160)
+
 
 ## Acknowledgments
 
