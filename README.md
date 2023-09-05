@@ -10,6 +10,8 @@ The Search Assistant for Document Similarity Comparison is a sophisticated and i
 
 - **Euclidean Distance Calculation**: To provide users with comprehensive insights, the system employs Euclidean Distance to calculate similarity scores. This metric offers a clear and quantifiable representation of the degree of similarity between documents.
 
+![Architecture Diagram](https://github.com/christo357/Project-Similarity-Analyzer/assets/135303148/0cafb30a-d271-4ad1-9ff6-0ea4e30b3e82)
+
 ## Use Cases
 
 - **Plagiarism Detection**: Detect similarities and potential instances of plagiarism by comparing user-provided content with existing projects.
